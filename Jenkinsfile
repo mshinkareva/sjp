@@ -8,8 +8,8 @@ pipeline {
 
 
 
-!bin bash
 sh run_build_script.sh'''
+        sh 'ls'
       }
     }
 
