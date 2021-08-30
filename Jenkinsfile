@@ -4,12 +4,12 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Zalupa'
+        sh 'ls'
         sh '''
 
 
 
 sh run_build_script.sh'''
-        sh 'ls'
       }
     }
 
