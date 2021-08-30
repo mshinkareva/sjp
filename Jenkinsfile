@@ -14,21 +14,9 @@ sh run_build_script.sh'''
     }
 
     stage('Linux') {
-      parallel {
-        stage('Linux') {
-          steps {
-            echo 'Run Linux Script'
-            sh 'sh run_linux_tests.sh'
-          }
-        }
-
-        stage('Windows') {
-          steps {
-            echo 'Run Windows Script'
-            sh 'Run Windows srcript'
-          }
-        }
-
+      steps {
+        echo 'Run Linux Script'
+        sh 'sh run_linux_tests.sh'
       }
     }
 
